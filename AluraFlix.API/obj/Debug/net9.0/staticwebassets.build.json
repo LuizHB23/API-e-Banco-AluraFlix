@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "6q+B5MthaLErXLTY/LTYFwD/InPr7vyd4YZraeogx+0=",
+  "Source": "AluraFlix.API",
+  "BasePath": "_content/AluraFlix.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,17 @@
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\bin\Debug\net9.0\AluraFlix.Banco.deps.json
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\bin\Debug\net9.0\AluraFlix.Banco.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\bin\Debug\net9.0\AluraFlix.Banco.pdb
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\bin\Debug\net9.0\AluraFlix.Modelos.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\bin\Debug\net9.0\AluraFlix.Modelos.pdb
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.csproj.AssemblyReference.cache
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.AssemblyInfoInputs.cache
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.AssemblyInfo.cs
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.csproj.CoreCompileInputs.cache
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFli.0B8CD04F.Up2Date
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\refint\AluraFlix.Banco.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.pdb
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\ref\AluraFlix.Banco.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\bin\Debug\net9.0\AluraFlix.Banco.runtimeconfig.json
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Banco\obj\Debug\net9.0\AluraFlix.Banco.genruntimeconfig.cache

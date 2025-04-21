@@ -1,0 +1,228 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\AluraFlix.API.csproj": {}
+  },
+  "projects": {
+    "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\AluraFlix.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\AluraFlix.API.csproj",
+        "projectName": "AluraFlix.API",
+        "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\AluraFlix.API.csproj",
+        "packagesPath": "C:\\Users\\luizh\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\luizh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj": {
+                "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj",
+        "projectName": "AluraFlix.Banco",
+        "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj",
+        "packagesPath": "C:\\Users\\luizh\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\luizh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj": {
+                "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj",
+        "projectName": "AluraFlix.Modelos",
+        "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj",
+        "packagesPath": "C:\\Users\\luizh\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\luizh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

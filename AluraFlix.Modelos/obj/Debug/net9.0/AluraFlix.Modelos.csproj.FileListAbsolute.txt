@@ -1,0 +1,11 @@
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\bin\Debug\net9.0\AluraFlix.Modelos.deps.json
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\bin\Debug\net9.0\AluraFlix.Modelos.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\bin\Debug\net9.0\AluraFlix.Modelos.pdb
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\AluraFlix.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\AluraFlix.Modelos.AssemblyInfoInputs.cache
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\AluraFlix.Modelos.AssemblyInfo.cs
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\AluraFlix.Modelos.csproj.CoreCompileInputs.cache
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\AluraFlix.Modelos.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\refint\AluraFlix.Modelos.dll
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\AluraFlix.Modelos.pdb
+F:\GitHub\C#\Alura Challenge 1\AluraFlix.Modelos\obj\Debug\net9.0\ref\AluraFlix.Modelos.dll
