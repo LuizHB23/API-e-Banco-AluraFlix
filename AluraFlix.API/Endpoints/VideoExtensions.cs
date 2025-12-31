@@ -1,9 +1,10 @@
-using System.Text.Json;
-using AluraFlix.API.Endpoints.Response;
+using AluraFlix.Modelos.Response;
 using AluraFlix.Banco;
-using AluraFlix.Modelos;
+using AluraFlix.Modelos.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
+using AluraFlix.Modelos.DTOs;
+using AluraFlix.API.Services;
+using System.Data;
 
 namespace AluraFlix.API.Endpoints;
 
@@ -21,7 +22,7 @@ public static class VideoExtensions
             }
 
             return Results.Ok(listaVideos);
-        });
+        }).WithTags("Videos").WithOpenApi();
 
         app.MapGet("/videos/{id}", ([FromServices] AluraflixDal<Video> dal, int id) =>
         {
@@ -29,31 +30,36 @@ public static class VideoExtensions
 
             if(video is null) return Results.NotFound("Vídeo não encontrado");
 
-            return Results.Ok(video);
-        });
+            VideoResponse videoResponse = new(video.Titulo, video.Descricao, video.Url, video.CategoriaId);
 
-        app.MapPost("/videos", async ([FromBody] Video video, [FromServices] AluraflixDal<Video> dal) =>
+            return Results.Ok(videoResponse);
+        }).WithTags("Videos").WithOpenApi();
+
+         app.MapPost("/videos", async ([FromBody] VideoDTO videoDTO, [FromServices] AluraflixDal<Video> dalVideo, 
+            [FromServices] AluraflixDal<CategoriaVideo> dalCategoria, [FromServices] ValidacaoServices services) =>
         {   
-            if(video.Titulo.Trim().IsNullOrEmpty() || video.Descricao.Trim().IsNullOrEmpty()) 
+            switch (services.ValidaVideo(videoDTO))
             {
-                return Results.BadRequest("Você deve preencher corretamente o que foi requerido");
+                case 1:
+                    return Results.BadRequest("Você deve preencher corretamente o que foi requerido");
+                case 2:
+                    return Results.BadRequest("A url é inválida");
+                default:
+                    break;
             }
 
-            if(!VerificaUrl(video))
-            {
-                
-                return Results.BadRequest("A url é inválida");
-            }
+            Video video = new Video();
+            
+            video.Titulo = videoDTO.Titulo.Trim();
+            video.Descricao = videoDTO.Descricao.Trim();
+            video.Url = videoDTO.Url.Trim();
 
-            video.Titulo = video.Titulo.Trim();
-            video.Descricao = video.Descricao.Trim();
-            video.Url = video.Url.Trim();
-
-            // await dal.AdicionarAsync(video);
+            //await dalVideo.AdicionarAsync(video);
             return Results.Json(video);
-        });
+        }).WithTags("Videos").WithOpenApi();;
 
-        app.MapPut("/videos/{id}", async ([FromBody] Video video, [FromServices] AluraflixDal<Video> dal, int id) => 
+        app.MapPut("/videos/{id}", async ([FromBody] VideoDTO videoDTO, [FromServices] AluraflixDal<Video> dal,
+                    [FromServices] ValidacaoServices services, int id) => 
         {
             Video? videoRecuperado = dal.RecuperarPor(v => v.Id == id);
 
@@ -62,85 +68,53 @@ public static class VideoExtensions
                 return Results.BadRequest("O vídeo não existe");
             }
 
-            if(!video.Titulo.IsNullOrEmpty())
+            if(services.ValidaDTO(videoDTO))
             {
-                videoRecuperado!.Titulo = video.Titulo;
+                services.ValidacaoEAtualizaVideo(videoRecuperado, videoDTO);      
+            }
+            else
+            {   
+                return Results.BadRequest("As informações insuficientes");
             }
 
-            if(!video.Descricao.IsNullOrEmpty())
-            {
-                videoRecuperado!.Descricao = video.Descricao;
-            }
-
-            if(VerificaUrl(video))
-            {
-                
-                videoRecuperado!.Url = video.Url;
-            }
-
-            await dal.AtualizarAsync(videoRecuperado!);
+            //await dal.AtualizarAsync(videoRecuperado!);
             return Results.Ok("Vídeo atualizado com sucesso");
-        });
+        }).WithTags("Videos").WithOpenApi();
 
-        app.MapPatch("/videos/{id}", async ([FromBody] object objeto, [FromServices] AluraflixDal<Video> dal, int id) => 
+        app.MapPatch("/videos/{id}", async ([FromBody] VideoDTO videoDTO, [FromServices] AluraflixDal<Video> dal, 
+                      [FromServices] ValidacaoServices services, int id) => 
         {
             Video? videoRecuperado = dal.RecuperarPor(v => v.Id == id);
 
-            if(videoRecuperado is null) 
+            if(videoRecuperado is null)
             {
                 return Results.BadRequest("O vídeo não existe");
             }
 
-            var json = JsonSerializer.Serialize(objeto);
-            var video = JsonSerializer.Deserialize<VideoResponse>(json);
-            int contagem = 0;
-
-            if(!video.titulo.IsNullOrEmpty())
+            try
             {
-                videoRecuperado!.Titulo = video.titulo;
-                contagem++;
+                services.ValidacaoEAtualizaVideo(videoRecuperado, videoDTO);      
             }
-
-            if(!video.descricao.IsNullOrEmpty())
-            {
-                videoRecuperado!.Descricao = video.descricao;
-                contagem++;
-            }
-
-            if(VerificaUrl(video))
-            {
-                
-                videoRecuperado!.Url = video.url;
-                contagem++;
-            }
-
-            if(contagem == 0)
+            catch (DataException e)
             {
                 return Results.BadRequest("As informações passadas não geram um vídeo");
             }
 
-            await dal.AtualizarAsync(videoRecuperado!);
+            //await dal.AtualizarAsync(videoRecuperado!);
             return Results.Ok("Vídeo atualizado com sucesso");
-        });
+        }).WithTags("Videos").WithOpenApi();;
 
         app.MapDelete("/videos/{id}", async ([FromServices] AluraflixDal<Video> dal, int id) => 
         {
             Video? videoRecuperado = dal.RecuperarPor(v => v.Id == id);
 
-            if(videoRecuperado is null) Results.BadRequest("O vídeo não existe");
+            if(videoRecuperado is null)
+            {
+                return Results.NotFound("O vídeo não existe");
+            }
 
-            await dal.DeletarAsync(videoRecuperado!);
+            //await dal.DeletarAsync(videoRecuperado!);
             return Results.NoContent();
-        });
-    }
-
-    private static bool VerificaUrl(Video video)
-    {
-        return video.Url.Trim().StartsWith("https://") || video.Url.Trim().StartsWith("http://");
-    }
-
-    private static bool VerificaUrl(VideoResponse video)
-    {
-        return video.url.Trim().StartsWith("https://") || video.url.Trim().StartsWith("http://");
+        }).WithTags("Videos").WithOpenApi();;
     }
 }

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.Banco", "AluraFli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.Modelos", "AluraFlix.Modelos\AluraFlix.Modelos.csproj", "{5A9A0D5A-2150-4747-9837-C70C4F9D7C68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.API.Videos", "AluraFlix.API.Videos\AluraFlix.API.Videos.csproj", "{D0B93BD0-5E25-453E-88A6-A1A28CF569E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraFlix.Videos.DB", "AluraFlix.Videos.DB\AluraFlix.Videos.DB.csproj", "{D0B93BD0-5E25-453E-88A6-A1A28CF569E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

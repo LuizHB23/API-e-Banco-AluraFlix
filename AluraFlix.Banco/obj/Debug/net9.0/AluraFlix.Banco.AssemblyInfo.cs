@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AluraFlix.Banco")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f4e2c52bda7262549c71da05641b1ae4ff88d12")]
 [assembly: System.Reflection.AssemblyProductAttribute("AluraFlix.Banco")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AluraFlix.Banco")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

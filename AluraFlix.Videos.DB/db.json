@@ -19,12 +19,6 @@
       "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
     },
     {
-      "id": 2,
-      "titulo": "O que é REST?",
-      "descricao": "Só enchendo linguiça",
-      "url": "https://www.youtube.com/watch?v=weQ8ssA6iBU"
-    },
-    {
       "id": 4,
       "titulo": "NGINX: Servidor Web, Proxy Reverso e API Gateway",
       "descricao": "Gabs Ferreira conversou com o @Dias de Dev, que é instrutor aqui da Alura e criou  nosso novo curso de NGINX",

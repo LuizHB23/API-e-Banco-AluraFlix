@@ -5336,11 +5336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\AluraFlix.API.csproj",
+      "projectUniqueName": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.API\\AluraFlix.API.csproj",
       "projectName": "AluraFlix.API",
-      "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\AluraFlix.API.csproj",
+      "projectPath": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.API\\AluraFlix.API.csproj",
       "packagesPath": "C:\\Users\\luizh\\.nuget\\packages\\",
-      "outputPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.API\\obj\\",
+      "outputPath": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\luizh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5355,8 +5355,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj": {
-              "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj"
+            "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Banco\\AluraFlix.Banco.csproj": {
+              "projectPath": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Banco\\AluraFlix.Banco.csproj"
             }
           }
         }
@@ -5371,7 +5371,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -5409,7 +5409,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

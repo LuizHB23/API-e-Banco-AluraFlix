@@ -1,8 +1,8 @@
 using AluraFlix.Modelos;
 
-namespace AluraFlix.API.Videos;
+namespace AluraFlix.Videos.DB;
 
-internal class listaVideos
+internal class ListaVideos
 {
-    public List<Video> videos { get; set; }
+    public List<VideoArquivo> videos { get; set; }
 }

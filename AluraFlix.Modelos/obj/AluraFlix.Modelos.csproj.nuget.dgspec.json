@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj": {}
+    "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj": {}
   },
   "projects": {
-    "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj": {
+    "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj",
+        "projectUniqueName": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj",
         "projectName": "AluraFlix.Modelos",
-        "projectPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj",
+        "projectPath": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Modelos\\AluraFlix.Modelos.csproj",
         "packagesPath": "C:\\Users\\luizh\\.nuget\\packages\\",
-        "outputPath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Modelos\\obj\\",
+        "outputPath": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luizh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

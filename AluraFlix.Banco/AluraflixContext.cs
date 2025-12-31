@@ -1,13 +1,14 @@
-using AluraFlix.Modelos;
+using AluraFlix.Modelos.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AluraFlix.Banco;
 
 public class AluraflixContext : DbContext
 {
-    private readonly string connectionString = "Server=localhost; Database=Aluraflix; Integrated Security=SSPI; TrustServerCertificate=True";
+    private readonly string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Aluraflix;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
 
     public DbSet<Video> Videos { get; set; }
+    public DbSet<CategoriaVideo> CategoriaVideos { get; set; }
 
     public AluraflixContext() : base() { }
 
@@ -16,5 +17,10 @@ public class AluraflixContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(connectionString).UseLazyLoadingProxies();
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AluraflixContext).Assembly);
     }
 }

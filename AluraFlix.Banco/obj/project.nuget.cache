@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I/YglHb8S1I=",
+  "dgSpecHash": "IJt4ERRz0qY=",
   "success": true,
-  "projectFilePath": "F:\\GitHub\\C#\\Alura Challenge 1\\AluraFlix.Banco\\AluraFlix.Banco.csproj",
+  "projectFilePath": "C:\\Github\\C#\\Alura-Challenge-1\\AluraFlix.Banco\\AluraFlix.Banco.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luizh\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\luizh\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

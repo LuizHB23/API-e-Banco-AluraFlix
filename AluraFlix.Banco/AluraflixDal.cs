@@ -39,4 +39,9 @@ public class AluraflixDal<T> where T : class
     {
         return context.Set<T>().FirstOrDefault<T>(condicao);
     }
+
+    public bool VerificaExistencia(Func<T,bool>condicao)
+    {
+        return (context.Set<T>().Find(condicao) is not null)? true : false;
+    }
 }
